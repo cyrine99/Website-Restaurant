@@ -1,0 +1,1082 @@
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    
+    body a {
+        text-decoration: none;
+    }
+    
+    body button:hover {
+        cursor: pointer;
+    }
+    
+    body {
+        font-family: BunnigirlshandYOFF;
+        font-weight: 100px;
+    }
+    
+    body p {
+        font-family: Arial;
+    }
+    /***********************الحاويات في كل الصفحات*************************/
+    
+    .container {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+    /**************************************  تصميم الهيدر متع الشعار  ****************************************/
+    
+    header {
+        background-color: rgba(0, 0, 25, 0.5);
+        margin-bottom: 85px;
+        padding: 10px;
+    }
+    /*************************************تصميم قائمة التنقل في الهيدير****************************/
+    
+    .nav1 {
+        text-align: center;
+        background: rgba(255, 255, 255, 0.89);
+        font-family: myfont;
+        font-weight: 1;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-size: 12px;
+        z-index: 99999;
+        width: 100%;
+        padding: 30px;
+        margin-top: -85px;
+    }
+    
+    .ul_about li {
+        list-style: none;
+        display: inline-block;
+        text-align: center;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .ul_about li a {
+        color: black;
+        font-weight: bolder;
+        text-decoration: none;
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    .ul_about li a:hover {
+        color: #faa580;
+        border-bottom: 1px solid #faa580;
+        border-top: 1px solid #faa580;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        transition: 1s all;
+    }
+    /***********تصميم الميديا في الهيدير***************/
+    
+    .share-button {
+        width: 80px;
+        height: 60px;
+        background: #ffe4d3;
+        border-radius: 40px;
+        /*******تخلي العناصر اللينك في النص******/
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        transition: 0.3s linear;
+        float: left;
+        margin-top: -40px;
+    }
+    
+    .share-button span {
+        position: absolute;
+        width: 100%;
+        height: 60px;
+        background: #f7bfa8;
+        color: #ff0505;
+        text-align: center;
+        line-height: 80px;
+        transition: 0.6s linear;
+        border-radius: 40px;
+        font-size: 25px;
+        padding-bottom: 73px;
+    }
+    
+    .share-button:hover span {
+        opacity: 0;
+        transition: 0.5s all;
+    }
+    
+    .share-button a {
+        margin: 5px;
+        font-size: 15px;
+        color: #2d3436;
+        text-align: center;
+        transition: 0.3s all;
+    }
+    /**************تصميم محرك البحت في الهيدير**************/
+    
+    .div-search {
+        float: right;
+        background-color: #f7bfa8;
+        height: 40px;
+        border-radius: 30px;
+        margin-right: 30px;
+        margin-top: -25px;
+    }
+    
+    .div-search a {
+        background: #ff0505;
+        float: right;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        transition: 0.5s all;
+        padding: 10px;
+        color: #fff;
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    .search-input {
+        border: none;
+        background: none;
+        outline: none;
+        float: left;
+        padding: 0;
+        font-size: 16px;
+        transition: 1s all;
+        line-height: 40px;
+        width: 0px;
+        text-align: center;
+    }
+    
+    .div-search:hover .search-input {
+        width: 240px;
+        transition: 1s all;
+    }
+    
+    .div-search a:hover {
+        transition: 0.5s all;
+        background: #fff;
+        color: #f42f2c;
+        text-decoration: none;
+    }
+    /****************************************************************************/
+    /**************************************تصميم الفوتر************************************/
+    
+    footer {
+        background-color: black;
+        margin-top: 0px;
+        padding: 20px;
+    }
+    
+    footer p {
+        font-size: 12px;
+        text-align: center;
+        color: rgb(139, 133, 133);
+    }
+    
+    footer p i {
+        font-size: 12px;
+        text-align: center;
+        color: #faa580;
+        margin: 5px 10px 0px;
+    }
+    
+    footer p i:hover {
+        transform: scale(1.2);
+    }
+    
+    footer p span {
+        font-size: 12px;
+        text-align: center;
+        font-family: 'Stea Regular';
+        color: #faa580;
+    }
+    /*******************************************تصميم الجوو باااك*************************************/
+    
+    #back-to-top {
+        position: fixed;
+        bottom: 40px;
+        right: 10px;
+        z-index: 9999;
+        /* باش تقعد ديما فوق كل شي*/
+        height: 40px;
+        width: 40px;
+        border-radius: 70px;
+        transition: 0.3s all;
+    }
+    
+    #back-to-top:hover {
+        transform: scale(1.5);
+        transition: 0.3s all;
+    }
+    /**************************=======================تصميم محتوى الصفحات============================***********************/
+    /****************************************تصميم محتوى صفحة الهووم*************************************/
+    
+    .dis-home p {
+        color: #fff;
+        font-size: 20px;
+        letter-spacing: 5px;
+        text-align: left;
+        margin-top: 62px;
+        font-weight: bolder;
+        max-width: 400px;
+        padding: 10px;
+    }
+    
+    .dis-home h2 {
+        color: #faa580;
+        font-size: 55px;
+        letter-spacing: 2px;
+        text-align: left;
+        font-weight: 900;
+    }
+    
+    .dis-home .p-dis-home-down {
+        letter-spacing: 0px;
+        text-align: left;
+        margin-top: 20px;
+        max-width: 400px;
+        font-size: 18px;
+        padding: 10px;
+        font-weight: 100;
+    }
+    
+    .dis-home .btn-home {
+        background-color: #f42f2c;
+        border: none;
+        border-radius: 30px;
+        padding: 10px;
+        text-transform: uppercase;
+        font-weight: bolder;
+        width: 200px;
+        font-size: 15px;
+        outline: none;
+        transition: 0.5s all;
+    }
+    
+    .dis-home .btn-home:hover {
+        background: none;
+        border: 1px solid #fff;
+        transform: scale(1.2);
+        transition: 2s all;
+    }
+    /*SECTION 1*/
+    
+    .home {
+        padding: 40px;
+        margin: 20px;
+        margin-bottom: 300px;
+        background-color: rgba(245, 236, 236, 0.4);
+        box-shadow: 2px 15px 70px 2px rgba(212, 157, 157, 0.75);
+        margin-top: 50px;
+    }
+    
+    .heder_home {
+        text-align: center;
+        margin-top: 60px;
+        color: black;
+        letter-spacing: 3px;
+        font-size: 40px;
+    }
+    
+    .home img {
+        width: 300px;
+        height: 200px;
+        margin: 10px;
+    }
+    
+    .home h3
+    /**********العناوين إلي تحت الصور********/
+    
+    {
+        font-size: 15px;
+        color: #faa580;
+        text-align: left;
+        text-transform: uppercase;
+        margin: 5px;
+    }
+    
+    .home p
+    /**********ابراجرافات إلي تحت الصور********/
+    
+    {
+        margin: 10px;
+        font-size: 12px;
+        color: #918e8e;
+        letter-spacing: 1px;
+        margin: 5px;
+    }
+    
+    .lef,
+    .med,
+    .rit {
+        margin-top: 80px;
+        margin-bottom: 60px;
+        width: 300px;
+        margin: 10px;
+        overflow: hidden;
+        padding: 20px;
+    }
+    
+    .lef:hover {
+        transform: scale(1.1);
+        transition: 1.5s all;
+        cursor: pointer;
+        padding: 20px;
+        box-shadow: 2px 15px 50px 2px rgba(0, 0, 0, 0.75);
+        border-radius: 30px;
+    }
+    
+    .lef:hover img {
+        transition: 0.3s all;
+        width: 250px;
+    }
+    
+    .med:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+        transition: 1.5s all;
+        padding: 20px;
+        box-shadow: 2px 15px 50px 2px rgba(0, 0, 0, 0.75);
+        border-radius: 30px;
+    }
+    
+    .med:hover img {
+        transition: 0.3s all;
+        width: 250px;
+    }
+    
+    .rit:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+        transition: 1.5s all;
+        padding: 20px;
+        box-shadow: 2px 15px 50px 2px rgba(0, 0, 0, 0.75);
+        border-radius: 30px;
+    }
+    
+    .rit:hover img {
+        transition: 0.3s all;
+        width: 250px;
+    }
+    /**SECTION 2**/
+    
+    .sec-home-2 {
+        background-color: rgb(226, 200, 200);
+        padding: 50px;
+    }
+    
+    .sec-home-2 h1 {
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 10px;
+        font-family: BunnigirlshandYOFF, sans-serif;
+    }
+    
+    .Box {
+        width: 1200px;
+        min-height: 500px;
+        background-color: #fff;
+        margin: 70px auto 70px;
+        padding: 20px;
+    }
+    
+    .Box .imegs {
+        height: 300px;
+        width: 300px;
+        background-color: #e75b1e;
+        margin: 20px auto;
+        padding: 0px;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .img-imegs-Box img {
+        height: 300px;
+        width: 300px;
+        transition: transform 2s;
+    }
+    
+    .imegs:hover img {
+        transform: scale(1.2);
+    }
+    
+    .diteals-imegs-Box {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        bottom: 10px;
+        right: 10px;
+        background-color: rgba(0, 0, 0, 0.5);
+        transform: scaleY(0);
+        transition: transform 2s;
+    }
+    
+    .imegs:hover .diteals-imegs-Box {
+        transform: scaleY(1);
+    }
+    
+    .diteals-imegs-Box h3 {
+        color: #faa580;
+        padding: 20px;
+        font-size: 20px;
+        text-align: center;
+        margin-top: 60px;
+    }
+    
+    .diteals-imegs-Box p {
+        color: #fff;
+        padding: 10px;
+        font-size: 20px;
+        text-align: center;
+        margin-top: 0px;
+    }
+    /*********************************************تصميم محتوى صفحة الأبااوت أس***********************************/
+    
+    .about-section1 {
+        padding: 20px;
+    }
+    
+    .about-section1 {
+        background-color: #e7f1f8;
+    }
+    
+    .about-section1 h1 {
+        font-weight: 300;
+        text-align: center;
+    }
+    
+    .about-section1 p {
+        text-align: center;
+        margin: 50px;
+        color: #918e8e;
+        font-weight: 100;
+    }
+    
+    .seconde-div-about {
+        margin: 35px;
+    }
+    /*SECTION 2*/
+    
+    .about-section2 {
+        padding: 50px;
+    }
+    /************تصميم الصور فوق بعض في الأباوت*************/
+    
+    .about-images {
+        text-align: center;
+        position: relative;
+    }
+    
+    .about-images img {
+        border: 6px solid #f8c2ab;
+        border-radius: 999px;
+        max-width: 600px;
+    }
+    
+    .about-inset {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    /****SECTION 2****/
+    
+    .about-section2 .right {
+        padding: 20px;
+        margin-top: 30px;
+        display: inline;
+        width: 50%;
+    }
+    
+    .about-section2 .left {
+        margin-top: 30px;
+        padding: 20px;
+        display: inline;
+        width: 50%;
+    }
+    
+    .about-section2 .left h1 {
+        margin-top: 55px;
+        color: #faa580;
+        text-transform: uppercase;
+        font-size: 70px;
+        letter-spacing: 5px;
+        text-align: left;
+    }
+    
+    .about-section2 .left h5 {
+        text-align: left;
+    }
+    
+    .about-section2 .left p {
+        text-align: left;
+        color: #918e8e;
+        margin-top: 25px;
+    }
+    /***SECTION 3***/
+    
+    .about-sectio3 {
+        background-color: #f7bfa8;
+        text-align: center;
+        padding: 100px;
+        height: 600px;
+    }
+    
+    .about-sectio3 h1 {
+        color: #e75b1e;
+        font-size: 50px;
+        letter-spacing: 5px;
+    }
+    
+    .about-sectio3 p {
+        color: #f5f5f5;
+        letter-spacing: 2px;
+        font-size: 12px;
+        margin-bottom: 30px;
+    }
+    
+    .chef-1 {
+        height: 300px;
+        width: 263px;
+        border-radius: 30px;
+        margin: auto;
+    }
+    
+    .chef-1 h1 {
+        text-align: center;
+    }
+    
+    .chef-1-div-media {
+        margin-top: 200px;
+        text-align: center;
+        background-color: rgba(253, 99, 28, 0.5);
+        max-height: 5px;
+        padding-top: 5px;
+        overflow: hidden;
+        transition: 0.5s all;
+    }
+    
+    .chef-1-div-media a i {
+        text-align: center;
+        height: 30px;
+        width: 30px;
+        padding-top: 8px;
+        background-color: #fff;
+        color: #f36d38;
+        border-radius: 50%;
+    }
+    
+    .chef-1-div-media a i:hover {
+        transform: scale(1.2);
+        background-color: #f36d38;
+        color: #fff;
+    }
+    
+    .chef-1:hover .chef-1-div-media {
+        max-height: 65px;
+        transition: 1.5s max-height;
+        padding-bottom: 5px;
+    }
+    /******************************************/
+    /****************************************************تصميم صفحة المنيو*************************************************/
+    
+    .sec-menu-1 {
+        margin-top: 100px;
+        margin-bottom: 200px;
+    }
+    
+    .sec-menu-1 p,
+    h5 {
+        text-align: left;
+        margin-top: 20px;
+    }
+    
+    .sec-menu-1 h5 {
+        font-weight: 700;
+    }
+    
+    .sec-menu-1 p {
+        color: #918e8e;
+    }
+    
+    .sec-menu-1 h1 {
+        text-align: center;
+        margin-bottom: 100px;
+    }
+    
+    .left-m,
+    .md1-m,
+    .md2-m,
+    .rit-m {
+        max-width: 200px;
+        margin: auto;
+        display: inline;
+    }
+    
+    .left-m:hover h5 {
+        color: #fd8280;
+        transition: 0.5s all;
+    }
+    
+    .left-m:hover {
+        cursor: pointer;
+    }
+    
+    .md1-m:hover h5 {
+        color: #fd8280;
+        transition: 0.5s all;
+    }
+    
+    .md1-m:hover {
+        cursor: pointer;
+    }
+    
+    .md2-m:hover h5 {
+        color: #fd8280;
+        transition: 0.5s all;
+    }
+    
+    .md2-m:hover {
+        cursor: pointer;
+    }
+    
+    .rit-m:hover h5 {
+        color: #fd8280;
+        transition: 0.5s all;
+    }
+    
+    .rit-m:hover {
+        cursor: pointer;
+    }
+    /**SECTION 2**/
+    
+    .sec-menu-2 {
+        margin-top: 100px;
+        margin-bottom: 0px;
+        text-align: center;
+        background-color: #fac5af;
+        padding: 50px;
+        transition: 1s all;
+    }
+    
+    .sec-menu-2 h2 {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 15px;
+        font-weight: 100;
+        padding: 10px;
+    }
+    
+    .sec-menu-2 hr {
+        background-color: #000;
+        width: 100px;
+        margin: auto;
+    }
+    
+    .sec-menu-2 img {
+        height: 50px;
+        width: 50px;
+    }
+    
+    .sec-menu-2 .container {
+        padding: 0px;
+        background-color: #f5f5f5;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        border-radius: 50px;
+    }
+    
+    .STARTERS {
+        margin: 10px 40px 10px 40px;
+        padding: 0px;
+        width: 210px;
+        display: inline;
+    }
+    
+    .STARTERS button {
+        border: none;
+        width: 100%;
+        height: 100%;
+        outline: none;
+        background-color: #f5f5f5;
+        padding: 40px;
+    }
+    
+    .STARTERS button:hover {
+        background-color: #f0dfd9;
+        transition: 0.5s all;
+    }
+    
+    .STARTERS button:hover img {
+        transform: scale(1.5);
+        transition: 0.5s all;
+    }
+    
+    .STARTERS button:focus {
+        background-color: #faa580;
+        color: #fff;
+        transition: 0.5s all;
+    }
+    
+    .wagba {
+        border-top: 1px solid #cccccc;
+        padding: 20px;
+        transition: 2s all;
+    }
+    
+    .wagba img {
+        height: 200px;
+        width: 200px;
+        border: 2px solid #e75b1e;
+        border-radius: 50%;
+    }
+    
+    .wagba h4 {
+        padding: 10px;
+        border: 2px solid #e75b1e;
+        border-radius: 100px;
+    }
+    
+    .wagba h2 {
+        font-size: 20px;
+        margin: 10px;
+        font-family: sans-serif;
+        letter-spacing: 2px;
+    }
+    
+    .one-m,
+    .two-m,
+    .three-m,
+    .four-m {
+        max-width: 260px;
+        margin: 10px;
+        margin: auto;
+        display: inline;
+    }
+    /***************************************تصميم صفحة الكونتاك أس**********************************************/
+    
+    .dis-contact .btn-contac {
+        background-color: #f42f2c;
+        border: none;
+        border-radius: 30px;
+        padding: 10px;
+        text-transform: uppercase;
+        font-weight: bolder;
+        width: 200px;
+        font-size: 15px;
+        outline: none;
+        transition: 0.5s all;
+        text-align: center;
+        position: absolute;
+        left: 42%;
+        right: 50%;
+    }
+    
+    .dis-contact .btn-contac:hover {
+        background: none;
+        border: 1px solid #f42f2c;
+        background-color: rgba(0, 0, 0, 0.1);
+        transform: scale(1.2);
+        transition: 2s all;
+    }
+    
+    .dis-contact h2 {
+        text-align: center;
+        font-size: 70px;
+        color: #ff7c44;
+        font-weight: bolder;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-top: 0px;
+    }
+    
+    .dis-contact .p1 {
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 10px;
+        margin-top: 100px;
+        font-size: 25px;
+        color: #000;
+    }
+    
+    .h-con {
+        font-size: 30px;
+        margin: 10px;
+        margin-top: 100px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    
+    .col {
+        position: relative;
+        width: 100%;
+        padding: 0 10px;
+        margin: 30px 100px 10px;
+        transition: 1s all;
+    }
+    
+    .col .inputBox {
+        position: relative;
+        width: 100%;
+        height: 40px;
+        color: #e75b1e;
+    }
+    
+    .col .inputBox input,
+    .col .inputBox.textarea textarea {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        border: none;
+        outline: none;
+        padding: 0px 10px;
+    }
+    
+    .col .inputBox .text
+    /************Span text*********/
+    
+    {
+        position: absolute;
+        /*******باش يكونوا نازلات على مربع النص********/
+        top: 0;
+        left: 0;
+        line-height: 40px;
+        padding: 0 10px;
+        display: block;
+        transition: 0.5s;
+        pointer-events: none;
+        /**************تمنع تحديد النص بالأزرق*************/
+    }
+    
+    .col .inputBox input:focus+.text {
+        /*************باش يركب السبان متع النص الدي فوق مربع النص***************/
+        top: -35px;
+        left: -10px;
+        font-size: 15px;
+    }
+    
+    .col .inputBox .line {
+        position: absolute;
+        bottom: 0px;
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: rgba(245, 121, 121, 0.5);
+        transition: 0.5s;
+        border-radius: 2px;
+        pointer-events: none;
+    }
+    
+    .col .inputBox input:focus~.line {
+        height: 100%;
+        background-color: rgba(253, 175, 142, 0.5);
+    }
+    
+    .col .inputBox.textarea {
+        position: relative;
+        width: 100%;
+        height: 100px;
+        padding: 10px 0px;
+    }
+    
+    .col .inputBox.textarea textarea {
+        height: 100%;
+        resize: none;
+    }
+    
+    .col .inputBox textarea:focus+.text {
+        /*************باش يركب السبان متع النص الدي فوق مربع النص***************/
+        top: -35px;
+        left: -10px;
+        font-size: 15px;
+    }
+    
+    .col .inputBox textarea:focus~.line {
+        background-color: rgba(253, 175, 142, 0.5);
+        height: 100%;
+    }
+    
+    .btn-send {
+        background-color: #f42f2c;
+        border: none;
+        border-radius: 30px;
+        padding: 10px;
+        text-transform: uppercase;
+        font-weight: bolder;
+        width: 200px;
+        font-size: 15px;
+        outline: none;
+        transition: 0.5s all;
+        text-align: center;
+        position: absolute;
+        left: 42%;
+        right: 50%;
+        color: #fff;
+        margin-top: 50px;
+    }
+    
+    .btn-send:hover {
+        background: none;
+        border: 1px solid #f42f2c;
+        color: black;
+        transform: scale(1.2);
+        transition: 1s all;
+    }
+    /**SECTION 2**/
+    
+    .sec-card {
+        margin-top: 250px;
+        margin-bottom: 0px;
+        background-color: rgb(255, 255, 255);
+        height: 500px;
+        padding: 0px;
+        text-align: center;
+    }
+    
+    .sec-card h1 {
+        letter-spacing: 10px;
+        font-size: 40px;
+    }
+    
+    .card {
+        background-color: #f7bfa8;
+        padding: 10px 10px;
+        margin: 20px 15px;
+        margin-top: 100px;
+        width: 350px;
+        height: 200px;
+        text-align: center;
+        color: rgb(233, 229, 229);
+        cursor: pointer;
+        border-radius: 30px;
+        transition: 0.3s all;
+    }
+    
+    .card-icon {
+        font-size: 28px;
+        background: #ff6348;
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        line-height: 60px !important;
+        margin-top: 50px;
+        border-radius: 50%;
+        transition: 0.3s linear;
+        /***********التحولات الجميلة ************/
+    }
+    
+    .card:hover {
+        margin-top: 80px;
+        transition: 0.3s all;
+        background: #787879;
+    }
+    
+    .card:hover .card-icon {
+        background: none;
+        color: #ff6348;
+        transform: scale(2);
+        margin-top: 40px;
+    }
+    
+    .card p {
+        margin-top: 20px;
+        opacity: 0;
+        transition: 0.3s all;
+    }
+    
+    .card:hover p {
+        opacity: 1;
+        margin-top: 15px;
+        color: #fff;
+    }
+    /******************************************جزء الميديااا***************************************/
+    
+    @media(max-width:768px) {
+        .share-button {
+            margin-top: 8px;
+        }
+        .div-search {
+            margin-top: 10px;
+        }
+        .nav1 {
+            height: 150px;
+            ;
+        }
+    }
+    
+    @media(max-width:992px) {
+        .share-button {
+            margin-top: 8px;
+        }
+        .div-search {
+            margin-top: 10px;
+        }
+        .nav1 {
+            height: 150px;
+            ;
+        }
+    }
+    
+    @media(max-width:1200px) {
+        .share-button {
+            margin-top: 8px;
+        }
+        .div-search {
+            margin-top: 10px;
+        }
+        .nav1 {
+            height: 150px;
+            ;
+        }
+        .home img {
+            width: 250px;
+            height: 200px;
+            margin-bottom: 10px;
+        }
+    }
+    
+    @media (min-width: 576px) {
+        .container {
+            max-width: 540px;
+        }
+    }
+    
+    @media (min-width: 768px) {
+        .container {
+            max-width: 720px;
+        }
+    }
+    
+    @media (min-width: 992px) {
+        .container {
+            max-width: 960px;
+        }
+    }
+    
+    @media (min-width: 1200px) {
+        .container {
+            max-width: 1140px;
+        }
+    }
