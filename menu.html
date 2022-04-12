@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Menu Page</title>
+    <link rel="shortcut icon" type="image/ico" href="img/gogo.png">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <!------------------------------------------------Banner START------------------------------------------------>
+
+    <div class="banner" style="background:url(img/video-bg.jpg) ;background-repeat: no-repeat;background-size: cover  ;">
+
+
+
+        <header>
+            <div class="container">
+                <div class="row">
+                    <img id="ss" src="img/logo.png" style="margin:auto ;height: 50px;">
+                </div>
+            </div>
+        </header>
+
+
+
+
+        <div class="nav1">
+            <nav>
+                <div class="container">
+                    <ul class=" ul_about">
+                        <li class="li_about">
+                            <a class="a_about" href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About Us </a>
+                        </li>
+                        <li>
+                            <a href="menu.html">Menu</a>
+                        </li>
+                        <li>
+                            <a href="contects.html">Contacts</a>
+                        </li>
+                    </ul>
+
+                    <div class=" share-button">
+                        <span><i class="fa fa-heart"></i></span>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                    </div>
+
+
+
+                    <div class="div-search">
+                        <input type="text" class="search-input" placeholder="Search">
+                        <a href="#"><i class="fa fa-search"></i></a>
+                    </div>
+                </div>
+
+            </nav>
+        </div>
+
+
+
+
+
+
+        <div class="dis-home">
+            <div class="container">
+                <div class="row">
+                    <div>
+                        <p style="opacity: 0;">WIDE OPTIONS OF CHOICE</p>
+
+
+                        <h2>
+                            OUR MENU
+                        </h2>
+                        <p class="p-dis-home-down">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod <br>temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                        </p>
+                        <br>
+                        <button class="btn-home">
+              <a href="contects.html" style="text-decoration: none;color: #fff;">Contact US</a> 
+              </button>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <!------------------------------------------------Banner END------------------------------------------------>
+
+
+
+    <!----------------------------------------------------Section one START------------------------------------------------------->
+
+    <section class="sec-menu-1" style="">
+        <div class="container">
+            <h1>
+                our
+                <span style="color:#fc5b16;font-weight: 500;">
+                MENU
+             </span> the
+                <span style="color:#fc5b16;font-weight: 500;">
+                    PRICE
+             </span>
+            </h1>
+            <div class="row">
+                <div class=" left-m">
+                    <img src="img/f1.png">
+                    <h5>Refreshing Breakfast</h5>
+                    <p>Lorem ipsum dolor sit ametcons ecteturadipis icing elit.</p>
+                </div>
+                <div class=" md1-m">
+                    <img src="img/f2.png">
+                    <h5>Awesome Lunch</h5>
+                    <p>Lorem ipsum dolor sit ametcons ecteturadipis icing elit.</p>
+                </div>
+                <div class=" md2-m">
+                    <img src="img/f3.png">
+                    <h5>Soothing Dinner</h5>
+                    <p>Lorem ipsum dolor sit ametcons ecteturadipis icing elit.</p>
+                </div>
+                <div class=" rit-m">
+                    <img src="img/f4.png">
+                    <h5>Rich Quality Buffe</h5>
+                    <p>Lorem ipsum dolor sit ametcons ecteturadipis icing elit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----------------------------------------------------Section one END------------------------------------------------------->
+
+
+
+    <!----------------------------------------------------Section TWO START------------------------------------------------------->
+
+    <section class="sec-menu-2">
+        <div class="container">
+            <div class="row" style="border-radius: 50px;">
+
+                <div style="border-radius: 50px;" class=" STARTERS">
+                    <button class="one" onclick="funSlider()"> 
+                    <h2>STARTERS</h2>
+                    <hr>
+                    <br>
+                    <img src="img/1-menu.png">
+                </button>
+
+                </div>
+                <div class=" STARTERS">
+                    <button onclick="funSlider2()">
+                    <h2>main dishes</h2>
+                    <hr style="width: 150px;">
+                    <br>
+                    <img src="img/1.png">
+                    </button>
+                </div>
+                <div class=" STARTERS">
+                    <button onclick="funSlider3()">
+                    <h2>Sweets</h2>
+                    <hr>
+                    <br>
+                    <img src="img/3.png">
+                </button>
+                </div>
+                <div class=" STARTERS">
+                    <button class="four" onclick="funSlider4()">
+                    <h2>Drinks</h2>
+                    <hr>
+                    <br>
+                    <img src="img/4.png">
+                </button>
+                </div>
+            </div>
+
+
+            <div class="row wagba" id="wagba-1">
+
+                <div style="margin: auto;">
+                    <img src="img/q.png" style="height: 100px;width: 100px;border: none;">
+                    <h2 style="color: rgb(238, 67, 61);">Choose Type !</h2>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <!----------------------------------------------------Section TWO END------------------------------------------------------->
+
+
+
+
+
+
+
+
+    <script>
+        function funSlider() {
+            document.getElementById("wagba-1").innerHTML = "<div class='one-m'><img  src='img/blog-img-6.jpg'><h2>Tangri Kebabs</h2> <h4>$12.5</h4></div><div class='two-m'><img  src='img/slider-img-2.jpg'><h2>Cheese Balls</h2> <h4>$10</h4></div><div class='three-m'><img src='img/gallery_10.jpg'><h2>Chicken Satay</h2> <h4>$15</h4></div><div class='four-m'><img class='img-menu-downdiv' src='img/blog-img-1.jpg'><h2>Catfish Bites</h2> " + "<h4>$8.5</h4></div> "
+        }
+
+        function funSlider2() {
+            document.getElementById("wagba-1").innerHTML = "<div class='one-m'>" + "<img  src='img/gallery_08.jpg'>" + "<h2>lasagne</h2>" + " " + "<h4>$40</h4>" + "</div>" + "<div class='two-m'>" + "<img src='img/vc.jpg'>" + "<h2>sirloin steak</h2>" + " " + "<h4>$32</h4>" + "</div>" + "<div class='three-m'>" + "<img class='img-menu-downdiv' src='img/about-main.jpg'>" + "<h2>mixed grill</h2>" + " " + "<h4>$25</h4>" + "</div>" + "<div class='four-m'>" + "<img  src='img/d3.jpg'>" + "<h2>roast beef</h2>" + "" + "<h4>$22</h4></div>"
+        }
+
+        function funSlider3() {
+            document.getElementById("wagba-1").innerHTML = "<div class='one-m'>" + "<img  src='img/blog-img-2.jpg'>" + "<h2>waffle</h2>" + " " + "<h4>$12</h4>" + "</div>" + "<div class='two-m'>" + "<img src='img/blog-img-5.jpg'>" + "<h2>pan cake</h2>" + " " + "<h4>$15</h4>" + "</div>" + "<div class='three-m'>" + "<img  src='img/slider-img-1.jpg'>" + "<h2>Brownies</h2>" + " " + "<h4>$10</h4>" + "</div>" + "<div class='four-m'>" + "<img  src='img/slider-img-4.jpg'>" + "<h2>crepe</h2>" + " " + "<h4>$20</h4></div>"
+        }
+
+        function funSlider4() {
+            document.getElementById("wagba-1").innerHTML = "<div class='one-m'>" + "<img  src='img/smoothie1.jpg'>" + "<h2>Strawberries</h2>" + " " + "<h4>$12.5</h4>" + "</div>" + "<div class='two-m'>" + "<img src='img/smoothie2.jpg'>" + "<h2>pear</h2>" + " " + "<h4>$12.5</h4>" + "</div>" + "<div class='three-m'>" + "<img class='img-menu-downdiv' src='img/smoothie4.jpg'>" + "<h2>blueberry</h2>" + " " + "<h4>$12.5</h4>" + "</div>" + "<div class='four-m'>" + "<img  src='img/smoothie3.jpg'>" + "<h2>cocktail</h2>" + " " + "<h4>$12.5</h4></div>"
+        }
+    </script>
+
+
+
+
+    <!------------------------------------------------Footer START------------------------------------------------>
+    <footer>
+        <div class="container">
+            <p>Copyright ©2022 Cyrine | This website is made with<span><i class="fa fa-heart"></i></span> by CyrineGhwela
+                <p>
+                    <p>
+                        <a class="sochil" href="https://www.facebook.com"> <i class="fa fa-facebook"></i> </a>
+                        <a class="sochil" href="https://www.instagram.com"><i class="fa fa-instagram"></i> </a>
+                        <a class="sochil" href="https://www.twitter.com"> <i class="fa fa-twitter"></i> </a>
+
+                    </p>
+        </div>
+    </footer>
+
+    <!------------------------------------------------Footer END------------------------------------------------>
+
+
+
+    <!--هنا نضع كود ا Back to top-->
+    <a href="#ss" id="back-to-top" title="back to top" style="background: url('img/icon_top.png');background-size: cover;"></a>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
