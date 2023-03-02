@@ -1,6 +1,6 @@
 # Website-Restaurant
 A website with beautiful and attractive interfaces.  Website for a restaurant
-URL : https://wee-restaurant.herokuapp.com/
+URL :https://wee-restaurant.netlify.app/
 
 
 ![screencapture-file-C-Users-HP-Desktop-ALL-Cyrine-frontEnd-Project-contects-html-2022-04-12-03_20_07](https://user-images.githubusercontent.com/79914221/162873097-66dba0c2-ac8b-4d70-8d1e-7ca9183f6f6c.png)
